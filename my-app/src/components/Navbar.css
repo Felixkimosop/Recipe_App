@@ -29,6 +29,19 @@ li {
 
 .logo {
     font-size: 30px;
+    margin-left: 0;
+}
+.logo-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: brown;
+    margin-bottom:4px;
+    padding: 10px;
+    color: #ffffff;
+    border-bottom: 3px solid black;
+    border-top: 3px solid orange;
+   
 }
 
 span {
@@ -141,6 +154,11 @@ img {
 }
 
 /* hero section */
+.icons{
+        width: 30px;
+         height: 30px;
+          color:white;
+    }
 
 section#hero .btn.orange-bg {
     background-color: #D5DBDB;
@@ -204,34 +222,87 @@ section#hero .text-hero-section h1 {
 }
 
 .hero1 .category_section {
+    align-items: "center";
     width: 93%;
-    height: 20vh;
+    height: 15vh;
     margin-top: 0;
+    margin-left: 40px;
+    justify-content: center;
+    
+}
+.recipes{
+    margin-left: 35px;
+    align-content: center;
+    margin-top: 50px;
+}
+.recipes h1{
+    padding-left:40px;
+    font-family: "poppins";
+    font-size: 20px;
+}
+.link{
+    color: black;
 }
 
+.recipes .row{
+    margin-top: 0px;
+    padding-top: 0;
+}
+.recipes .row .card{
+    box-shadow: 3px 15px 15px rgba(0, 0, 0, 0.2);
+    height: 250px;
+    width: 220px;
+    margin: 8px;
+   
+}
+.recipes .row .card .card-img-top{
+    height: 70%;
+}
+.recipes .row .card .card-title{
+    margin-top: -30px;
+    font-weight: bolder;
+    font-style: italic;
+}
 .hero1 .category_section .row {
     display: flexbox;
-    display: flex
+    display: flex;
+    align-items:center;
+}
+.active {
+    background-color: #fd880b;
+}
+.category_section .row .card {
+    box-sizing: border-box;
+    width: 120px;
+    height: 50px;
+        background: #ffffff;
+        border-radius: 0.2rem;
+        box-shadow: 3px 15px 15px rgba(0, 0, 0, 0.2);
+        display: flex;
+        color:black;
+        font-weight: 900;
+        text-align: center;
+        border-radius: 10px;
+}
+.category_section .row .card:hover {
+background: linear-gradient(270deg, #fd880b, #f3b519);
 }
 
-
-
-.col img {
-   
-padding-bottom: -5rem;
-width:150px;
-height:150px;
-
-}
 .foods{
         padding-top: -4rem;
         border-radius: 0.2rem;
         box-shadow: 3px 15px 15px rgba(0, 0, 0, 0.2);
         background:linear-gradient(270deg, #fd880b,#f3b519);
-        height: 100%;
+        height: 70%;
         border-top-left-radius: 3rem;
         border-bottom-right-radius: 3rem;
+        border-left: 2px solid green;
         
+        
+}
+.foods .details h2 {
+font-size: 17px;
+
 }
 .foods .details p{
     color: #ffffff;
@@ -325,20 +396,70 @@ ul {
 }
 
 /*responsive*/
-@media(max-width: 767px) {
-    .footer-col {
-        width: 50%;
-        margin-bottom: 30px;
-    }
-}
 
 @media(max-width: 574px) {
+    .image {
+            width: 90%;
+            position: absolute;
+            z-index: -30;
+        }
+        .foods{
+            border-left: 2px solid orangered;
+        }
+                .foods .details h2 {
+                    font-size: 17px;
+        
+                }
+        
+                .foods .details p {
+                    color:orangered;
+                    font-weight: 300px;
+                    font-family: "poppins";
+        
+                }
+                .icons{
+                    color: orangered;
+                }
     .footer-col {
         width: 100%;
     }
+    .recipes{
+        margin: 0;
+    }
+        .recipes .row .card {
+            box-shadow: 3px 15px 15px rgba(0, 0, 0, 0.2);
+            height: 250px;
+            width: 90%;
+        }
+                .category_section .row .card {
+                    display: none !important;
+                }
 }
 /* end of footer css */
 @media (max-width: 768px) {
+    .footer-col {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+     .recipes {
+         margin: 0;
+             }
+        .recipes .row .card {
+            box-shadow: 3px 15px 15px rgba(0, 0, 0, 0.2);
+            height: 250px;
+            width: 45%;
+        }
+                .category_section .row{
+                    margin: 0
+                }
+                .category_section .row .card{
+                    height: 15px;
+                    padding: none;
+                    margin: 0;
+                }
+                .category_section .row .card img {
+                    display: none !important;
+                }
     .logo {
         display: flex;
         position: absolute;
@@ -393,6 +514,7 @@ ul {
         transition: all 0.5s ease-in-out;
         width: 100%;
         background-color: white;
+        z-index: 10;
     }
 
     ul li {
