@@ -30,7 +30,10 @@ function Card({fetchData}){
                     </h5>
                     <p className="card-text">{data.directions}</p>
                   </div>
+                  <div className="container-fluid" style={{display:"flex", justifyContent:"center", gap:"10px"}}>
                   <button className="btn btn-outline-secondary btn-sm">Delete</button>
+                  <button className="btn btn-outline-secondary btn-sm">Update</button>
+                  </div>
                 </div>
               
             );
