@@ -1,9 +1,5 @@
 import React from 'react';
 
-import { AiOutlineArrowRight } from 'react-icons/ai';
-import { GiKnifeFork } from 'react-icons/gi';
-import { FcAlarmClock} from "react-icons/fc";
-
 import Logo1 from "./img/r5.png";
 import Logo2 from "./img/fi4.png";
 import Logo3 from "./img/cu2.png";

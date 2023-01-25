@@ -32,16 +32,22 @@ const Recipe = () => {
     return (
         
         <section className='hero1'>
-            <section className="category_section">
-                <div className="row">
+            <section className="category_section p-3">
+                <div className="row p-1 " style={{
+                    gap: "10px", alignItems: "center",
+                    justifyContent: "center",
+                    boxSizing: "border-box"
+                }}>
                 {
                     categories.map((category, index) => {
                         return (
-                            
-                            <div className="col-1" key={index} onClick={()=>handleClick(category.strCategory)}>
-                                <img src={category.strCategoryThumb
-} alt="" value={category.strCategory} />                              <p>{category.strCategory
-}</p>
+                            <div className="col-1 card"
+                                key={index} onClick={() => handleClick(category.strCategory)}>
+                                    <img src={category.strCategoryThumb} alt=""
+                                        style={{  width: "100%", height: "100%", padding:"0" }}
+                                        value={category.strCategory} />                              
+                                <div className="cat-category p-0"><p>{category.strCategory}</p>
+                                </div>
                             </div>
                               
                         )
@@ -50,35 +56,25 @@ const Recipe = () => {
             </section>
             <section className="recipes">
                 <h1>Recipes</h1>
-                <div className="row">
+                <div className="row" style={{marginLeft:"40px", alignSelf:"center"}}>
                 {
                     foods.map((food, index) => {
                         return (
-                            <div className="card col-2 p-0 m-3 " >
-            <img src= {food.strMealThumb}className="card-img-top" alt={food.strMeal}></img> 
+                            
+                <div class="card col-2 p-0" key={index} style={{margin:"8px", width:"250px"}}>
+            <img src= {food.strMealThumb} className="card-img-top" alt={food.strMeal}></img> 
             <div className="card-body">
               <h5 className="card-title">{food.strMeal}</h5>
-                <p className="card-text">{food.strCategory}</p>
                             </div>
                             <button>View More</button>
-          </div>
+                                </div>
+                          
                         )
                     })}
-                    </div>
+                            </div>
+                            
             
-                    {/* {
-                        foods.map((food, index) => {
-                            return (
-                                <div class="card" key={index}>
-  <img src={food.strMealThumb} alt="Avatar" style="width:100%"/>
-  <div class="container">
-    <h4><b>{food.strMeal}</b></h4>
-    <p>{food.strCategory}</p>
-  </div>
-</div>
-                            )
-                        })
-                    } */}
+             
                     
                
   

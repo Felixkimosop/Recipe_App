@@ -204,25 +204,51 @@ section#hero .text-hero-section h1 {
 }
 
 .hero1 .category_section {
+    align-items: "center";
     width: 93%;
-    height: 20vh;
+    height: 15vh;
     margin-top: 0;
+    margin-left: 40px;
+    justify-content: center;
+    
 }
-
+.recipes{
+    margin-left: 35px;
+    align-content: center;
+}
+.recipes .row .card{
+    box-shadow: 3px 15px 15px rgba(0, 0, 0, 0.2);
+    height: 250px;
+}
+.recipes .row .card .card-img-top{
+    height: 70%;
+}
+.recipes .row .card .card-title{
+    margin-top: -30px;
+    font-weight: bolder;
+    font-style: italic;
+}
 .hero1 .category_section .row {
     display: flexbox;
-    display: flex
+    display: flex;
+    align-items:center;
+}
+
+.category_section .row .card {
+    box-sizing: border-box;
+    width: 120px;
+    height: 50px;
+        background: #ffffff;
+        border-radius: 0.2rem;
+        box-shadow: 3px 15px 15px rgba(0, 0, 0, 0.2);
+        display: flex;
+        color:black;
+        font-weight: 900;
+        text-align: center;
+        
 }
 
 
-
-.col img {
-   
-padding-bottom: -5rem;
-width:150px;
-height:150px;
-
-}
 .foods{
         padding-top: -4rem;
         border-radius: 0.2rem;
