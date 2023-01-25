@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 const Recipe = () => {
     const [categories, setCategories] = useState([])
@@ -33,6 +34,7 @@ const Recipe = () => {
         
         <section className='hero1'>
             <section className="category_section p-3">
+                <h6>Menu Category</h6>
                 <div className="row p-1 " style={{
                     gap: "10px", alignItems: "center",
                     justifyContent: "center",
@@ -61,12 +63,12 @@ const Recipe = () => {
                     foods.map((food, index) => {
                         return (
                             
-                <div class="card col-2 p-0" key={index} style={{margin:"8px", width:"250px"}}>
+                <div class="card  p-0" key={index}>
             <img src= {food.strMealThumb} className="card-img-top" alt={food.strMeal}></img> 
             <div className="card-body">
               <h5 className="card-title">{food.strMeal}</h5>
                             </div>
-                            <button>View More</button>
+                            <Link to={`/recipe/${food.idMeal}`} className="link">View More<br/> &#8594;</Link>
                                 </div>
                           
                         )

@@ -1,4 +1,9 @@
 import React from 'react';
+import { TypeAnimation } from 'react-type-animation';
+import { AiOutlineStar } from "react-icons/ai";
+import { BsFillStarFill } from "react-icons/bs";
+
+
 
 import Logo1 from "./img/r5.png";
 import Logo2 from "./img/fi4.png";
@@ -19,7 +24,22 @@ const Home = () => {
           </div>
           <div class="col-md-5 text-hero-section">
             <div class="pt-5 pb-4"><span class="badge-hero text-white px-4 py-1">Delicious Food</span></div>
-            <h1 class="display-1 fw-bold lh-sm mb-3">Easy Recipes</h1>
+            <h1 class="display-1 fw-bold lh-sm mb-3">
+      <TypeAnimation
+      sequence={[
+        "Easy Recipes",
+                  "Delicious Food",
+         "Tasty Treat"
+        
+      ]}
+      wrapper="h1"
+      cursor={true}
+      repeat={Infinity}
+        speed={3}
+        deletionSpeed={5}
+      style={{ fontSize: '40px',color:"#ff4500" }}
+    />
+             </h1>
             <p class="lead mb-5">Sometimes you just need a go-to easy dinner recipe — one that's perfect for busy nights where you don't want to spend hours in the kitchen, but still want something more substantial than, say, a PB&J.</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
               <button type="button" class="btn btn-primary orange-bg border-0 btn-lg px-5 me-md-2 rounded-pill">View Recipe <span class="hidden_span"></span> &#8594;</button>
@@ -38,7 +58,13 @@ const Home = () => {
               <div className="details">
                 <h2>Veggie fried rice</h2>
                 <p>Dinner &#8594;</p>
-                
+                  <div><BsFillStarFill className='icons' />
+                    <BsFillStarFill className='icons' />
+                    <BsFillStarFill className='icons' />
+                    <BsFillStarFill className='icons' />
+                    <BsFillStarFill className='icons' />
+                  </div>
+                 
               </div>
 
             </div>
@@ -49,7 +75,13 @@ const Home = () => {
               <div className="details">
                 <h2>Sweet & sour chicken</h2>
                 <p>Dessert &#8594;</p>
-                
+                  <div>
+                    <BsFillStarFill className='icons' />
+                    <BsFillStarFill className='icons' />
+                    <BsFillStarFill className='icons' />
+                    <BsFillStarFill className='icons' />
+                    <BsFillStarFill className='icons' />
+                </div>
               </div>
 
             </div>
@@ -60,7 +92,13 @@ const Home = () => {
               <div className="details">
                 <h2>Chicken breast</h2>
                 <p>Lunch &#8594;</p>
-               
+               <div>
+                    <BsFillStarFill className='icons' />
+                    <BsFillStarFill className='icons' />
+                    <BsFillStarFill className='icons' />
+                    <BsFillStarFill className='icons' />
+                    <BsFillStarFill className='icons' />
+                </div>
                 
               </div>
 
@@ -72,8 +110,15 @@ const Home = () => {
               <div className="details">
                 <h2>Salmon dinner</h2>
                 <p>Dinner &#8594;</p>
-              </div>
-
+              
+                <div>
+                    <BsFillStarFill className='icons' />
+                    <BsFillStarFill className='icons' />
+                    <BsFillStarFill className='icons' />
+                  <BsFillStarFill className='icons' />
+                  <AiOutlineStar className='icons'/>
+                  </div>
+                  </div>
             </div>
         </div>
       </div>
