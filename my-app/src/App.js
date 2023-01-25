@@ -1,30 +1,27 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 
-import {Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Recipe from "./components/Recipe";
 
 import Creation from "./components/Creation";
 import Favorite from "./components/Favorite";
+import FoodDetails from "./components/FoodDetails";
 
 function App() {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="recipe" element={<Recipe />} />
+        <Route path="recipe/:id" element={<FoodDetails />} />
         <Route path="creation" element={<Creation />} />
         <Route path="favorite" element={<Favorite />} />
       </Routes>
-     
-    
     </>
-    
-     
   );
 }
 
 export default App;
-

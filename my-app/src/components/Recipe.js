@@ -2,33 +2,31 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 const Recipe = () => {
-    const [categories, setCategories] = useState([])
-    const [query, setQuery] = useState("");
-    const [foods, setFoods] = useState([]);
-  
+  const [categories, setCategories] = useState([]);
+  const [query, setQuery] = useState("");
+  const [foods, setFoods] = useState([]);
+
   useEffect(() => {
-   
-         fetch(`https://www.themealdb.com/api/json/v1/1/categories.php`)
-        .then((res) => res.json())
-        .then((res) => {
-          setCategories(res.categories)
-         
-        })
+    fetch(`https://www.themealdb.com/api/json/v1/1/categories.php`)
+      .then((res) => res.json())
+      .then((res) => {
+        setCategories(res.categories);
+      });
   }, []);
-    
-    function handleClick(strCategory) {
-         setQuery(strCategory) 
-    }
-  
-    useEffect(() => {
-   
-         fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`)
-        .then((res) => res.json())
-        .then((data) => {
-          setFoods(data.meals)
-          console.log(data.meals)
-        })
+
+  function handleClick(strCategory) {
+    setQuery(strCategory);
+  }
+
+  useEffect(() => {
+    fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setFoods(data.meals);
+        // console.log(data.meals);
+      });
   }, [query]);
+
 
     return (
         
@@ -86,3 +84,4 @@ const Recipe = () => {
     )
 }
 export default Recipe;
+
