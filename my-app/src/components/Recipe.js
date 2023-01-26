@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+
 const Recipe = () => {
   const [categories, setCategories] = useState([]);
   const [query, setQuery] = useState("");
@@ -40,7 +40,7 @@ const Recipe = () => {
                 {
                     categories.map((category, index) => {
                         return (
-                            <li className=" bg-gray-800 gap-2 rounded-full text-white"
+                            <li className=" scroll bg-gray-800 gap-2 rounded-full text-white"
                                 key={index} onClick={() => handleClick(category.strCategory)}>
                                     <img src={category.strCategoryThumb} alt=""
                                         style={{  padding:"2" }}
@@ -73,11 +73,6 @@ const Recipe = () => {
                         )
                     })}
                             </div>
-                            
-            
-             
-                    
-               
   
             </section>
         </section>

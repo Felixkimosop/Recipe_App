@@ -313,6 +313,10 @@ font-size: 17px;
     
 }
 /* end of hero category section */
+.fav_icon:hover{
+    background-color:orangered;
+    
+}
 /* extra info section */
 .extra-info{
     margin:10px;
@@ -446,6 +450,70 @@ ul {
                 .category_section .row .card {
                     display: none !important;
                 }
+    /* fooddetails */
+    .container{
+        width: 100%;
+    }
+    .container .row{
+        width: 100%;
+        margin: 0;
+    }
+    .col-4{
+        width: 100%;
+    }
+    .col-4 .card img{
+        width: 100%;
+        margin: 0;
+    }
+    .col-3{
+        width: 50%;
+        margin: 0;
+        height: auto;
+        padding:0;
+    }
+    .ingredients li{
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        list-style: none;
+        line-break: normal;
+    }
+    .displays{
+        width: 100%;
+    }
+    .col .content{
+        width: 100%;
+    }
+    .col-6{
+        width: 100%;
+    }
+    /* category */
+    .category_section{
+            margin: 0;
+            padding: 0;
+        }
+        .category_section .row{
+            margin: 0;
+            width: 100px;
+            padding: 0;
+            margin-left: 0;
+        }
+    .scroll{
+        
+        margin:0;
+    }
+    /* footer */
+ .row .footer-col .social-links li{
+       margin: 0;
+       padding: 0;
+       font-size: 15px;
+       gap:0;
+    }
+    .row .footer-col{
+        width: 32%;
+        padding:0;
+        margin: 0;
+    }
 }
 /* end of footer css */
 @media (max-width: 768px) {
