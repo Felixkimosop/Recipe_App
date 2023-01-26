@@ -3,7 +3,7 @@ import Card from "../components/card"
 const Creation = () => {
   const [fetchData, setCard] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3700/recipes")
+    fetch("http://localhost:8001/recipes")
       .then((res) => res.json())
       .then((data) => setCard(data));
   }, []);
@@ -31,7 +31,7 @@ const Creation = () => {
 
     setCard([...fetchData, formData]);
 
-    fetch("http://localhost:3700/recipes", {
+    fetch("http://localhost:8001/recipes", {
       method: "POST",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(formData),

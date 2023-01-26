@@ -31,28 +31,30 @@ const Recipe = () => {
     return (
         
         <section className='hero1'>
-            <section className="category_section p-3">
+            <section className="category_section p-3" style={{ marginBottom:"20px" ,height:"200px" }}>
                 <h6>Menu Category</h6>
                 <div className="row p-1 " style={{
-                    gap: "10px", alignItems: "center",
-                    justifyContent: "center",
-                    boxSizing: "border-box"
+                    boxSizing: "border-box",width:"900px",overflowX:"auto",marginLeft:"12%",height:"100%"
                 }}>
+                    <ul className="flex flex-row  d-flex mx-w-sm " style={{}}>
                 {
                     categories.map((category, index) => {
                         return (
-                            <div className="col-1 card"
+                            <li className=" bg-gray-800 gap-2 rounded-full text-white"
                                 key={index} onClick={() => handleClick(category.strCategory)}>
                                     <img src={category.strCategoryThumb} alt=""
-                                        style={{  width: "100%", height: "100%", padding:"0" }}
+                                        style={{  padding:"2" }}
                                         value={category.strCategory} />                              
                                 <div className="cat-category p-0"><p>{category.strCategory}</p>
                                 </div>
-                            </div>
+                            </li>
                               
                         )
                     })
-                }    </div> 
+                            
+                        }
+                </ul></div> 
+                
             </section>
             <section className="recipes">
                 <h1>Recipes</h1>

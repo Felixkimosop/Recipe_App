@@ -11,6 +11,12 @@ import Logo3 from "./img/cu2.png";
 import Logo4 from "./img/c3.png";
 import Logo5 from "./img/plate.jpeg";
 import Logo6 from "./img/chef.png";
+import Extra1 from "./img/1.jpeg";
+import Extra2 from "./img/2.jpeg";
+import Extra3 from "./img/3.jpeg";
+import Extra4 from "./img/4.jpeg";
+import Extra5 from "./img/5.jpeg";
+import Extra6 from "./img/6.jpeg";
 
 import "./Navbar.css";
 
@@ -130,13 +136,34 @@ const Home = () => {
            <div className="carousel--container">
             <div className="carousel--content">
               <div className="row">
+                  <div className="col-6 display">
+                  <img src={Logo5} alt="" />
+                  <img src={Logo4} alt="" />
+                  <img src={Logo3} alt="" />
+                  <img src={Logo2} alt="" />
                   <div className="col">
-              <img src={Logo6} alt=""/>
+                  <img src={Extra1} alt="" />
+                  <img src={Extra2} alt="" />
+                    <img src={Extra3} alt="" />
+                    <img src={Extra4} alt="" />
+                  <img src={Extra5}alt="" />
+                    <img src={Extra6} alt="" />
+                    <img src={Extra1} alt="" />
+                    </div>
                 </div>
                 <div className="col">
                   <div className="content">
-                    <p>HELLO</p>
-              </div>
+                    <h2>Cooking Quotes: <img src={Logo6} alt="" style={{borderRadius:"50%",width:"50px",height:"50px",margin:"0",border:"2px solid orange"}}/></h2>
+                    
+                    <p><cite>“I feel a recipe is only a theme which an
+                      intelligent cook can play each time with a variation.”</cite> — Madam Benoit.</p>
+                    <p><cite> “Fifty thousand dollars’ worth of cabinets isn’t going to make you a better cook;
+                      cooking is going to make you a better cook. At the end of the day,
+                      you can slice a mushroom in about three inches of space,
+                      and you can carve a chicken in a foot and a half. So it doesn’t matter how big the kitchen is.”</cite> — Tyler Florence.</p>
+                    <p><cite> “Taste as you go. When you taste the food throughout
+                      the cooking process, you can make adjustments as you go.”</cite>— Anne Burrell.</p>
+                  </div>
               </div>
               </div>
             </div>
