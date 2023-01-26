@@ -7,7 +7,8 @@ import Recipe from "./components/Recipe";
 
 import Creation from "./components/Creation";
 import Favorite from "./components/Favorite";
-import FoodDetails from "./components/FoodDetails";
+import FoodDetails from "./components/FoodDetails"
+  import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="creation" element={<Creation />} />
         <Route path="favorite" element={<Favorite />} />
       </Routes>
+      <Footer/>
     </>
   );
 }
