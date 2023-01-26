@@ -1,14 +1,6 @@
 {
   "recipes": [
     {
-      "id": 1,
-      "image": "https://as1.ftcdn.net/v2/jpg/01/36/92/14/1000_F_136921455_pPF1ANpDU1Kqp3OyUMn5b6G6rSc2ss6X.jpg",
-      "country": "Kenya",
-      "category": "beef",
-      "ingredients": "1 tbsp. vegetable oil 2 lb. beef chuck stew meat, cubed into 1 pieces, 1 tbsp. extra-virgin olive oil 1 medium yellow onion, chopped 2 carrots, peeled and cut into rounds 2 stalks celery, chopped Kosher salt  Freshly ground black pepper 3 cloves garlic, minced 1/4 c. tomato paste 6 c. low-sodium beef broth 1 c. red wine 1 tbsp. Worcestershire sauce 1 tsp. dried or fresh thyme leaves 2 bay leaves 1 lb. baby potatoes, halved 1 c. frozen peas 1/4 c. freshly chopped parsley, for garnish",
-      "directions": "Step 1 In a large dutch oven or heavy-bottomed pot over medium heat, heat oil. Add beef and cook until seared on all sides, 10 minutes, working in batches if necessary. Transfer beef to a plate. Step 2 In the same pot, cook onion, carrots, and celery until soft, 5 minutes. Season with salt and pepper. Add garlic and tomato paste and cook until garlic is fragrant and tomato paste has darkened, 2 minutes. Step 3  Add beef back to dutch oven then add broth, wine, Worcestershire sauce, thyme, and bay leaves.    Step 4  Bring to a boil then reduce heat to a simmer. Season with salt and pepper. Cover and let simmer until beef is tender, 30 to 45 minutes. Step 5  Add potatoes and simmer, covered, until potatoes are tender, 15 minutes.  Step 6 Remove bay leaves. Stir in peas and cook until warmed through, 2 minutes. Season stew to taste with salt and pepper, then ladle into serving bowls and garish with parsley. "
-    },
-    {
       "image": "https://img.freepik.com/free-photo/curry-with-chicken-onions-indian-food-asian-cuisine_2829-4415.jpg?w=1060&amp;t=st=1674661164~exp=1674661764~hmac=c9387c82f7ad0db9b9e7eccd0ed912f5b6a6b15d6c2845ee8005bb25de6a29df\" width=\"941\" height=\"677\"",
       "category": "chicken",
       "ingredients": "Coriander, cumin, turmeric, fennel seeds, cinnamon, pepper, ground mustard, ground cloves, cayenne pepper and salt – these spices build incredible flavor in this dish. Together they create a homemade curry blend. Olive oil – used for sautéing. Fresh onion, garlic and ginger – these aromatics add a key depth of flavor. Low-sodium chicken broth – to create a sauce base to coat the chicken. Canned tomatoes – fresh tomatoes will work here too but canned are quicker and easier. Chicken breasts – be careful not to over-cook so the chicken doesn’t become dry. Cornstarch – used to thicken the sauce slightly. Heavy cream – this makes the sauce deliciously rich and creamy. Chopped cilantro – adds a nice prop of fresh flavor and color.",
@@ -46,6 +38,7 @@
   ],
 
 
+
    
    
    
@@ -53,12 +46,12 @@
 
 
   "favorite":[
-    {
-      "id" : 1,
-      "idMeal": 53026,
-      "strMeal" : "Tamiya",
-      "strMealThumb" : "https://www.themealdb.com/images/media/meals/n3xxd91598732796.jpg"
-    }
 
+    {
+      "id": 1,
+      "idMeal": 53026,
+      "strMeal": "Tamiya",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/n3xxd91598732796.jpg"
+    }
   ]
 }

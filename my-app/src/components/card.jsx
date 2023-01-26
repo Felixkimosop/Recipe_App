@@ -13,35 +13,32 @@ function Card({fetchData}){
   },[]);
 
 
-  const handleDelete = id => {
-    fetch(`http://localhost:3700/recipes${id}`, {
-      method: 'DELETE'
+  const handleDelete = (id) => {
+    fetch(`http://localhost:3700/recipes/${id}`, {
+      method: 'DELETE',
     })
-    .then(res => {
-      if(res.ok) {
-        setData(prevData => prevData.filter(item => item.id !== id));  
-      }
-    })
+      .then(res => res.json())
+    .then(data =>console.log(data))
   };
 
   
-    const handleUpdate = (id) => {
-      fetch(`http://localhost:3700/recipes${id}`, {
-        method:'PATCH',
-        headers: { 'Content-Type': 'application/json'},
-        body: JSON.stringify(updatedData)
-      })
-      .then(res => res.json())
-      .then(data =>{console.log(data)}
-      ) 
-      const updatedData = data;
-      setData(prevData => prevData.map(item => {
-        if (item.id === id) {
-          return updatedData;
-        }
-        return item;
-      }));
-    };
+    // const handleUpdate = (id) => {
+    //   fetch(`http://localhost:3700/recipes${id}`, {
+    //     method:'PATCH',
+    //     headers: { 'Content-Type': 'application/json'},
+    //     body: JSON.stringify(updatedData)
+    //   })
+    //   .then(res => res.json())
+    //   .then(data =>{console.log(data)}
+    //   ) 
+    //   const updatedData = data;
+    //   setData(prevData => prevData.map(item => {
+    //     if (item.id === id) {
+    //       return updatedData;
+    //     }
+    //     return item;
+    //   }));
+    // };
 
 
 
@@ -82,7 +79,7 @@ function Card({fetchData}){
                    onClick={() => handleDelete(data.id)}
                   >Delete</button>
                   <button className="btn btn-outline-secondary btn-sm"
-                  onClick={() => handleUpdate(data.id)}
+                  // onClick={() => handleUpdate(data.id)}
                   >Update</button>
                   </div>
                 </div>

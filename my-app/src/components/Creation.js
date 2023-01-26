@@ -31,7 +31,7 @@ const Creation = () => {
 
     setCard([...fetchData, formData]);
 
-    fetch("http://localhost:8001/recipes", {
+    fetch("http://localhost:3700/recipes", {
       method: "POST",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(formData),
