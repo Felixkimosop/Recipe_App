@@ -2,9 +2,6 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { AiOutlineStar } from "react-icons/ai";
 import { BsFillStarFill } from "react-icons/bs";
-
-
-
 import Logo1 from "./img/r5.png";
 import Logo2 from "./img/fi4.png";
 import Logo3 from "./img/cu2.png";
@@ -18,7 +15,7 @@ import Extra4 from "./img/4.jpeg";
 import Extra5 from "./img/5.jpeg";
 import Extra6 from "./img/6.jpeg";
 
-import "./Navbar.css";
+
 
 const Home = () => {
   return (
@@ -34,7 +31,7 @@ const Home = () => {
       <TypeAnimation
       sequence={[
         "Easy Recipes",
-                  "Delicious Food",
+          "Delicious Food",
          "Tasty Treat"
         
       ]}
@@ -151,7 +148,7 @@ const Home = () => {
                     <img src={Extra1} alt="" />
                     </div>
                 </div>
-                <div className="col">
+                <div className="col-6">
                   <div className="content">
                     <h2>Cooking Quotes: <img src={Logo6} alt="" style={{borderRadius:"50%",width:"50px",height:"50px",margin:"0",border:"2px solid orange"}}/></h2>
                     

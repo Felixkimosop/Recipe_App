@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { ImArrowLeft } from "react-icons/im";
+import { GrFavorite } from "react-icons/gr";
 
 
 
@@ -19,15 +20,8 @@ function FoodDetails() {
 		.then((res) => res.json())
 		.then((data) => setFood(data.meals));
 	}, [id]);
-	// console.log(food);
+	
 
-	// function handleClick(event) {
-    //         setFavorite(event.target.value) 
-            
-    
-    //     }
-    
-        // console.log(favorite);
 	function addToFavorites (items, id){
 		let newFavorite = food.filter((data) => data.id === id)
 		setFood (newFavorite) 
@@ -40,9 +34,7 @@ function FoodDetails() {
             strMeal: items.strMeal,
 			strMealThumb: items.strMealThumb,
 		}
-		// const favFood = favorite.find((item) => item.id ===	id)
-		// favFood? alert ("yeh") : addToFavorites (items)
-		// console.log (favFood);
+		
 		fetch ("http://localhost:3700/favorite", {
 			method: "POST",
             headers: {
@@ -55,7 +47,7 @@ function FoodDetails() {
             console.log (data)})
 	}
 
-	// console.log (items);
+	
 	return (
 		<div>
 			<section className='method_section'>
@@ -67,8 +59,7 @@ function FoodDetails() {
 									<div className='row' style={{ marginBottom: "15px" }}>
 										<div className='col-4' key={index}>
 											<img
-												value = {item.strMealThumb}
-												
+												value={item.strMealThumb}
 												src={item.strMealThumb}
 												className='card img'
 												alt={item.strMeal}
@@ -80,7 +71,7 @@ function FoodDetails() {
 												}}
 											/>
 
-											<label  style={{ fontSize: "30px" }} >
+											<label style={{ fontSize: "30px" }}>
 												Meal:
 												<span
 													style={{
@@ -88,14 +79,13 @@ function FoodDetails() {
 														fontWeight: "bold",
 														fontSize: "30px",
 													}}
-													value = {item.strMeal}
+													value={item.strMeal}
 												>
 													{item.strMeal}
-													
 												</span>
 											</label>
 											<br />
-											<label style={{ fontSize: "30px" }} >
+											<label style={{ fontSize: "30px" }}>
 												Area:
 												<span
 													style={{
@@ -103,13 +93,13 @@ function FoodDetails() {
 														fontWeight: "bold",
 														fontSize: "30px",
 													}}
-													value = {item.idMeal}
+													value={item.idMeal}
 												>
 													{item.strArea}
 												</span>
 											</label>
 										</div>
-										<div className='col-3'>
+										<div className='col-3 ingredients'>
 											<h3 className='card title'>Ingredients</h3>
 											<ul className='card body d-flex m-0'>
 												<li className='card-text-sm'>{item.strIngredient1}</li>
@@ -169,8 +159,10 @@ function FoodDetails() {
 												<br />
 												Back
 											</Link>
-											<button onClick={() => handleClick (item.idMeal)}>
-												Favorites
+											<br />
+											<button onClick={() => handleClick(item.idMeal)}>
+												<GrFavorite className="fav_icon" /><br/>
+												+Favorite
 											</button>
 										</div>
 									</div>
