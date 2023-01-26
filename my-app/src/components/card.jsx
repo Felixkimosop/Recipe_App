@@ -18,27 +18,11 @@ function Card({fetchData}){
       method: 'DELETE',
     })
       .then(res => res.json())
-    .then(data =>console.log(data))
+    .then(data =>document.location.reload())
   };
 
   
-    // const handleUpdate = (id) => {
-    //   fetch(`http://localhost:3700/recipes${id}`, {
-    //     method:'PATCH',
-    //     headers: { 'Content-Type': 'application/json'},
-    //     body: JSON.stringify(updatedData)
-    //   })
-    //   .then(res => res.json())
-    //   .then(data =>{console.log(data)}
-    //   ) 
-    //   const updatedData = data;
-    //   setData(prevData => prevData.map(item => {
-    //     if (item.id === id) {
-    //       return updatedData;
-    //     }
-    //     return item;
-    //   }));
-    // };
+  
 
 
 
