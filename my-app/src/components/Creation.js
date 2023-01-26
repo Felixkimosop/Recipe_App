@@ -3,7 +3,7 @@ import Card from "../components/card"
 const Creation = () => {
   const [fetchData, setCard] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:8001/recipes")
+    fetch("http://localhost:3700/recipes")
       .then((res) => res.json())
       .then((data) => setCard(data));
   }, []);
