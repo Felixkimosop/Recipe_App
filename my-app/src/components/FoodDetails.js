@@ -3,18 +3,60 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { ImArrowLeft } from "react-icons/im";
 
-function FoodDetails() {
-  const { id } = useParams();
-  const [food, setFood] = useState([]);
-  console.log(id);
 
-  useEffect(() => {
-    fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
-      .then((res) => res.json())
-      .then((data) => setFood(data.meals));
-  }, [id]);
-  console.log(food);
-  return (
+
+function FoodDetails() {
+	const { id } = useParams();
+	const [food, setFood] = useState([]);
+	const [favorite, setFavorite] = useState([])
+	
+
+	// console.log(id);
+
+
+	useEffect(() => {
+	fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
+		.then((res) => res.json())
+		.then((data) => setFood(data.meals));
+	}, [id]);
+	// console.log(food);
+
+	// function handleClick(event) {
+    //         setFavorite(event.target.value) 
+            
+    
+    //     }
+    
+        // console.log(favorite);
+	function addToFavorites (items, id){
+		let newFavorite = food.filter((data) => data.id === id)
+		setFood (newFavorite) 
+		setFavorite ([...favorite, items])
+	}
+	function handleClick (idMeal){
+		const items = food.find((item) => item.idMeal === idMeal)
+		const favFood = {
+			idMeal: items.idMeal,
+            strMeal: items.strMeal,
+			strMealThumb: items.strMealThumb,
+		}
+		// const favFood = favorite.find((item) => item.id ===	id)
+		// favFood? alert ("yeh") : addToFavorites (items)
+		// console.log (favFood);
+		fetch ("http://localhost:3700/favorite", {
+			method: "POST",
+            headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify(favFood),
+		})
+		.then((res) => res.json())
+		.then((data) => {
+            console.log (data)})
+	}
+
+	// console.log (items);
+	return (
 		<div>
 			<section className='method_section'>
 				<div className='container'>
@@ -25,6 +67,8 @@ function FoodDetails() {
 									<div className='row' style={{ marginBottom: "15px" }}>
 										<div className='col-4' key={index}>
 											<img
+												value = {item.strMealThumb}
+												
 												src={item.strMealThumb}
 												className='card img'
 												alt={item.strMeal}
@@ -36,7 +80,7 @@ function FoodDetails() {
 												}}
 											/>
 
-											<label style={{ fontSize: "30px" }}>
+											<label  style={{ fontSize: "30px" }} >
 												Meal:
 												<span
 													style={{
@@ -44,12 +88,14 @@ function FoodDetails() {
 														fontWeight: "bold",
 														fontSize: "30px",
 													}}
+													value = {item.strMeal}
 												>
 													{item.strMeal}
+													
 												</span>
 											</label>
 											<br />
-											<label style={{ fontSize: "30px" }}>
+											<label style={{ fontSize: "30px" }} >
 												Area:
 												<span
 													style={{
@@ -57,6 +103,7 @@ function FoodDetails() {
 														fontWeight: "bold",
 														fontSize: "30px",
 													}}
+													value = {item.idMeal}
 												>
 													{item.strArea}
 												</span>
@@ -122,6 +169,9 @@ function FoodDetails() {
 												<br />
 												Back
 											</Link>
+											<button onClick={() => handleClick (item.idMeal)}>
+												Favorites
+											</button>
 										</div>
 									</div>
 									<div

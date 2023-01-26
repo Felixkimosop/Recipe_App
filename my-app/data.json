@@ -36,22 +36,18 @@
       "id": 6
     }
   ],
-
-
-
-   
-   
-   
-    
-
-
-  "favorite":[
-
+  "favorite": [
     {
-      "id": 1,
-      "idMeal": 53026,
-      "strMeal": "Tamiya",
-      "strMealThumb": "https://www.themealdb.com/images/media/meals/n3xxd91598732796.jpg"
+      "idMeal": "53013",
+      "strMeal": "Big Mac",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/urzj1d1587670726.jpg",
+      "id": 4
+    },
+    {
+      "idMeal": "52871",
+      "strMeal": "Yaki Udon",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/wrustq1511475474.jpg",
+      "id": 5
     }
   ]
 }
