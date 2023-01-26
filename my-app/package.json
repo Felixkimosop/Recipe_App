@@ -16,6 +16,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "server": "json-server --watch data.json -p 3700",
     "start": "react-scripts start",
     "server": "json-server --watch data.json -p 3700",
     "build": "react-scripts build",
