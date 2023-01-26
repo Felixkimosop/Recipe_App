@@ -70,7 +70,6 @@ const Recipe = () => {
                             </div>
                             <Link to={`/recipe/${food.idMeal}`} className="link">View More<br/> &#8594;</Link>
                                 </div>
-                          
                         )
                     })}
                             </div>
