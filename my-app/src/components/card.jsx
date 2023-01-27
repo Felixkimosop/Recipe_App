@@ -1,6 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+// import Recipe from './Recipe'; 
 function Card({fetchData}){
     console.log(fetchData)
+
+  const [data, setData] = useState([]);
+
+
+  useEffect(() => {
+    fetch()
+      .then(res => res.json())
+      .then(data => setData(data))
+  },[]);
+
+
+  const handleDelete = (id) => {
+    fetch(`http://localhost:3700/recipes/${id}`, {
+      method: 'DELETE',
+    })
+      .then(res => res.json())
+    .then(data =>document.location.reload())
+  };
+
+  
+  
+
+
+
     return(
         <div className="container-fluid" style={{ border: "2px solid white",borderRadius:"10px",margin:"10px", display:"flex", gap:"20px", flexWrap:"wrap", padding:"100px"}}>
         {fetchData.map((data, index) => {
@@ -31,8 +56,15 @@ function Card({fetchData}){
                     <p className="card-text">{data.directions}</p>
                   </div>
                   <div className="container-fluid" style={{display:"flex", justifyContent:"center", gap:"10px"}}>
-                  <button className="btn btn-outline-secondary btn-sm">Delete</button>
-                  <button className="btn btn-outline-secondary btn-sm">Update</button>
+
+                  
+          
+                  <button className="btn btn-outline-secondary btn-sm"
+                   onClick={() => handleDelete(data.id)}
+                  >Delete</button>
+                  <button className="btn btn-outline-secondary btn-sm"
+                  // onClick={() => handleUpdate(data.id)}
+                  >Update</button>
                   </div>
                 </div>
               

@@ -1,14 +1,6 @@
 {
   "recipes": [
     {
-      "id": 1,
-      "image": "https://as1.ftcdn.net/v2/jpg/01/36/92/14/1000_F_136921455_pPF1ANpDU1Kqp3OyUMn5b6G6rSc2ss6X.jpg",
-      "country": "Kenya",
-      "category": "beef",
-      "ingredients": "1 tbsp. vegetable oil 2 lb. beef chuck stew meat, cubed into 1 pieces, 1 tbsp. extra-virgin olive oil 1 medium yellow onion, chopped 2 carrots, peeled and cut into rounds 2 stalks celery, chopped Kosher salt  Freshly ground black pepper 3 cloves garlic, minced 1/4 c. tomato paste 6 c. low-sodium beef broth 1 c. red wine 1 tbsp. Worcestershire sauce 1 tsp. dried or fresh thyme leaves 2 bay leaves 1 lb. baby potatoes, halved 1 c. frozen peas 1/4 c. freshly chopped parsley, for garnish",
-      "directions": "Step 1 In a large dutch oven or heavy-bottomed pot over medium heat, heat oil. Add beef and cook until seared on all sides, 10 minutes, working in batches if necessary. Transfer beef to a plate. Step 2 In the same pot, cook onion, carrots, and celery until soft, 5 minutes. Season with salt and pepper. Add garlic and tomato paste and cook until garlic is fragrant and tomato paste has darkened, 2 minutes. Step 3  Add beef back to dutch oven then add broth, wine, Worcestershire sauce, thyme, and bay leaves.    Step 4  Bring to a boil then reduce heat to a simmer. Season with salt and pepper. Cover and let simmer until beef is tender, 30 to 45 minutes. Step 5  Add potatoes and simmer, covered, until potatoes are tender, 15 minutes.  Step 6 Remove bay leaves. Stir in peas and cook until warmed through, 2 minutes. Season stew to taste with salt and pepper, then ladle into serving bowls and garish with parsley. "
-    },
-    {
       "image": "https://img.freepik.com/free-photo/curry-with-chicken-onions-indian-food-asian-cuisine_2829-4415.jpg?w=1060&amp;t=st=1674661164~exp=1674661764~hmac=c9387c82f7ad0db9b9e7eccd0ed912f5b6a6b15d6c2845ee8005bb25de6a29df\" width=\"941\" height=\"677\"",
       "category": "chicken",
       "ingredients": "Coriander, cumin, turmeric, fennel seeds, cinnamon, pepper, ground mustard, ground cloves, cayenne pepper and salt – these spices build incredible flavor in this dish. Together they create a homemade curry blend. Olive oil – used for sautéing. Fresh onion, garlic and ginger – these aromatics add a key depth of flavor. Low-sodium chicken broth – to create a sauce base to coat the chicken. Canned tomatoes – fresh tomatoes will work here too but canned are quicker and easier. Chicken breasts – be careful not to over-cook so the chicken doesn’t become dry. Cornstarch – used to thicken the sauce slightly. Heavy cream – this makes the sauce deliciously rich and creamy. Chopped cilantro – adds a nice prop of fresh flavor and color.",
@@ -23,25 +15,19 @@
       "id": 3
     },
     {
-      "image": "https://img.freepik.com/free-photo/stir-fried-shrimp-with-chili-paste_1150-38070.jpg?w=1380&amp;t=st=1674665945~exp=1674666545~hmac=a14b70018aa5cfd59182360576e388a9b209b319d1d1b9cac78c56b324250095",
-      "category": "seaFood",
-      "ingredients": "2 tbsp. extra-virgin olive oil 1 lb. shrimp, peeled and deveined Kosher salt Freshly ground black pepper 1 tbsp. sesame oil 1 small head broccoli, cut into small florets 8 oz. sugar snap peas 1 red bell pepper, sliced 3 cloves garlic, minced 1 tbsp. minced ginger 1/2 c. low-sodium soy sauce 1 tbsp. cornstarch Juice of 1 lime 2 tbsp. packed brown sugar Pinch red pepper flakes",
-      "directions": "Step 1\nIn a large skillet over medium heat, heat olive oil. Add shrimp and season with salt and pepper. Cook until pink, 5 minutes, then remove from skillet.\nStep 2\nReturn skillet to heat and heat sesame oil. Add broccoli, peas, and bell pepper and cook until soft, 7 minutes. Add garlic and ginger and cook until fragrant, 1 minute more.\nStep 3\nIn a small bowl, whisk together soy sauce, cornstarch, lime juice, brown sugar, and a pinch of red pepper flakes. Add to skillet and toss to coat. Add shrimp and cook until heated through, 2 minutes.",
-      "id": 4
-    },
-    {
       "image": "https://img.freepik.com/free-photo/schezwan-noodles-szechwan-vegetable-hakka-noodles-chow-mein-is-popular-indo-chinese-recipes-served-bowl-plate-with-wooden-chopsticks_466689-74647.jpg?w=1380&amp;t=st=1674666391~exp=1674666991~hmac=577b49b06006a2eec6a3ca199efa3a3aba0a095649d0ab26ed93af4ab93dff8f",
       "category": "pasta",
       "ingredients": "2 tbsp olive oil\n▢3 clove garlic (finely chopped)\n▢4 tbsp spring onion (chopped)\n▢½ onion (finely chopped)\n▢½ carrot (chopped)\n▢4 tbsp cabbage (shredded)\n▢4 beans (chopped)\n▢½ capsicum (chopped)\n▢2 tbsp schezwan sauce\n▢½ tsp salt",
       "directions": "firstly, in a large kadai heat 2 tbsp olive oil and saute 3 clove garlic and 2 tbsp spring onion.\nalso, saute ½ onion on high flame.\nfurther add ½ carrot, 4 tbsp cabbage, 4 beans and ½ capsicum.\nstir fry on high flame without overcooking vegetables.\nnow add 2 tbsp schezwan sauce and ½ tsp salt. you can also use homemade schezwan sauce or schezwan chutney.\nstir fry for a minute making sure sauce is well combined.\nfurthermore, add in cooked noodles and stir fry on high flame.\nmix until the sauce is well combined.\nfinally, add spring onions and enjoy schezwan noodles.\n",
       "id": 5
-    },
+    }
+  ],
+  "favorite": [
     {
-      "image": "https://img.freepik.com/free-photo/schezwan-fried-rice-masala-szechuan-rice-is-popular-indo-chinese-food-served-plate-bowl-with-chopsticks-selective-focus_466689-74696.jpg?w=1380&amp;t=st=1674666674~exp=1674667274~hmac=3b73a214b9bde76280d96d6cbaf2ca267b745ae205f646e9a6013d40926ab109",
-      "category": "vegeterian",
-      "ingredients": "¾ cup yellow onion – finely chopped\n2½ tablespoons oil\n1 each egg – lightly beaten\n1 teaspoon soy sauce\n1 teaspoon sesame oil\n8 ounces boneless pork cooked; or 8 ounces chicken – cooked, chopped\n½ cup carrot – finely chopped\n½ cup peas – frozen, thawed\n4 cups rice – cooked\n4 each green onions – sliced\n2 cups bean sprouts\n2 tablespoons soy sauce",
-      "directions": "STEP 1\nHeat 1 tablespoons oil in wok; add chopped onions and sauté until onions brown in color; remove from wok.\nSTEP 2\nAllow wok to cool slightly.\nSTEP 3\nMix egg with 1 teaspoon soy sauce and 1 teaspoon sesame oil; set aside.\nSTEP 4\nAdd ½ tablespoon oil to wok. Add meat and carrots.\nSTEP 5\nAdd rice, green onions, and bean sprouts, tossing to mix well.\nSTEP 6\nIn the middle of the rice, make a hole and add the egg mixture. Once it starts to set, mix in with the rest of the rice.\nSTEP 7\nAdd 2 tablespoons soy sauce and sauté until thoroughly mixed.",
-      "id": 6
+      "idMeal": "53013",
+      "strMeal": "Big Mac",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/urzj1d1587670726.jpg",
+      "id": 4
     }
   ]
 }
