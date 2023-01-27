@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { ImArrowLeft } from "react-icons/im";
 import { GrFavorite } from "react-icons/gr";
+import Swal from "sweetalert2";
 
 
 
@@ -44,7 +45,14 @@ function FoodDetails() {
 		})
 		.then((res) => res.json())
 		.then((data) => {
-            console.log (data)})
+            Swal.fire({
+							position: "top-end",
+							icon: "success",
+							title: "Saved to favorites",
+							showConfirmButton: false,
+							timer: 1500,
+						});
+		})
 	}
 
 	

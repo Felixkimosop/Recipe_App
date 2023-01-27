@@ -28,18 +28,6 @@
       "strMeal": "Big Mac",
       "strMealThumb": "https://www.themealdb.com/images/media/meals/urzj1d1587670726.jpg",
       "id": 4
-    },
-    {
-      "idMeal": "53026",
-      "strMeal": "Tamiya",
-      "strMealThumb": "https://www.themealdb.com/images/media/meals/n3xxd91598732796.jpg",
-      "id": 6
-    },
-    {
-      "idMeal": "52950",
-      "strMeal": "Szechuan Beef",
-      "strMealThumb": "https://www.themealdb.com/images/media/meals/1529443236.jpg",
-      "id": 7
     }
   ]
 }

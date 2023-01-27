@@ -1,5 +1,6 @@
     import React, {useEffect, useState} from "react";
 import { Link } from "react-router-dom";  
+import Swal from "sweetalert2";
 import { MdAutoDelete } from "react-icons/md";    
 
     const Recipe = () => {
@@ -17,7 +18,9 @@ import { MdAutoDelete } from "react-icons/md";
             fetch(`http://localhost:3700/favorite/${id}`, {
                 method: 'DELETE',
                 
-            })
+			})
+			Swal.fire("Good job!", "DELETED SUCCESSFULLY!");
+			
             document.location.reload();
             
         }
