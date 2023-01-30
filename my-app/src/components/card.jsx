@@ -14,7 +14,7 @@ function Card({fetchData}){
 
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:3700/recipes/${id}`, {
+    fetch(`https://versel-json-file.vercel.app/recipes/${id}`, {
       method: 'DELETE',
     })
       .then(res => res.json())
