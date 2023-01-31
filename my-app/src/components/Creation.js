@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import Card from "../components/card"
+import Card from "../components/card";
 const Creation = () => {
   const [fetchData, setCard] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3700/recipes")
+    fetch("https://versel-json-file.vercel.app/recipes")
       .then((res) => res.json())
       .then((data) => setCard(data));
   }, []);
@@ -31,7 +31,7 @@ const Creation = () => {
 
     setCard([...fetchData, formData]);
 
-    fetch("http://localhost:3700/recipes", {
+    fetch("https://versel-json-file.vercel.app/recipes", {
       method: "POST",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(formData),
@@ -74,16 +74,16 @@ const Creation = () => {
             />
           </div>
           <div className="col-3">
-            <textarea   onChange={handleOnChange}
+            <textarea
+              onChange={handleOnChange}
               name="ingredients"
               value={formData.ingredients}
               className="form-control form-control-sm"
               type="text"
               placeholder="ingredients"
               aria-label=".form-control-sm example"
-              rows="3">
-                
-              </textarea>
+              rows="3"
+            ></textarea>
           </div>
           <div className="col-3">
             <select onChange={handleOnChange} name="category">
@@ -112,11 +112,12 @@ const Creation = () => {
               name="directions"
               className="form-control"
               id="exampleFormControlTextarea1"
-              rows="3">
-                 {/* {formData.directions} */}
+              rows="3"
+            >
+              {/* {formData.directions} */}
             </textarea>
           </div>
-            
+
           <div className="col-3 mx-auto p-3">
             <button className="btn btn-sm btn-success mx-auto" type="submit">
               Submit
@@ -124,8 +125,19 @@ const Creation = () => {
           </div>
         </form>
       </div>
-<div className="container-fluid" style={{ border: "2px solid white",borderRadius:"10px",margin:"10px", display:"flex", gap:"20px", flexWrap:"wrap", padding:"100px"}}>
-          <Card fetchData={fetchData}/>
+      <div
+        className="container-fluid"
+        style={{
+          border: "2px solid white",
+          borderRadius: "10px",
+          margin: "10px",
+          display: "flex",
+          gap: "20px",
+          flexWrap: "wrap",
+          padding: "100px",
+        }}
+      >
+        <Card fetchData={fetchData} />
       </div>
     </section>
   );
